@@ -1,0 +1,51 @@
+Algorithm to add at first
+
+Step1:Start
+Step2:intialize j=u
+Step3:while(j>0) do
+Step4:a[j]=a[j-1]
+Step5:j--
+step6:End while
+Step7:a[0]=key
+Step8:j++
+Step9:Stop
+
+
+
+Algorithm to add at any pos
+
+
+Step1:Start
+Step2:intialize j=u
+Step3:i=j
+Step4:while(i>pos) do
+Step5:a[i]=a[i-1]
+Step6:i--
+step7:End while
+Step8:a[loc]=key
+Step9:j++
+Step10:Stop
+
+
+
+
+Algorithm to add at end
+Step1:Start
+Step2:i=u
+Step3:a[u]=key
+Step4:i++
+Step5:Stop
+
+
+
+Algorithm to delete at start
+
+
+Step1:Start
+Step2:i=u
+Step3:while(i>0)
+Step4:a[i-1]=a[i]
+Step5:i--
+Step6:End while
+Step7:Stop
+
