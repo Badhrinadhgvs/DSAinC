@@ -30,6 +30,23 @@ void dequeue()
         return;
     }
     else{
-        
+        int x=stack[rear];
+        rear++;
+        printf("\nDeleted element is %d",x);
     }
+}
+
+
+
+int main()
+{
+    enqueue(1);
+    enqueue(2);
+    enqueue(3);
+    enqueue(4);
+    for(int i=rear;i<=front;i++)
+    {
+        printf("<-%d->",stack[i]);
+    }
+
 }
