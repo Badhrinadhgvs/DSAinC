@@ -10,20 +10,40 @@ void isFull();
 int pop();
 void main()
 {
-    /*int data;
-    push(1);
-    push(2);
-    push(3);
-    push(4);
-    data=pop();
-    printf("Deleted element from Stack:%d\n",data);
-    print();
-    data=pop();
-    printf("Deleted element from Stack:%d\n",data);
-    print();*/
-    isEmpty();
-    isFull();
-    print();
+     int choice, data;
+
+    while (1) {
+        printf("\nStack Operations Menu\n");
+        printf("--------------------\n");
+        printf("1. Push\n");
+        printf("2. Pop\n");
+        printf("3. Print Stack\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter data to push: ");
+                scanf("%d", &data);
+                push(data);
+                break;
+            case 2:
+                data = pop();
+                if (data != -1) {
+                    printf("Popped element: %d\n", data);
+                }
+                break;
+            case 3:
+                printStack();
+                break;
+            case 4:
+                printf("Exiting...\n");
+                return 0;
+            default:
+                printf("Invalid choice\n");
+        }
+    }
 }
 
 void push(int x)
